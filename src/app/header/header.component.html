@@ -24,5 +24,11 @@
       rocketName
     }}</span></span
   >
-  <ng-template #edit
+  <ng-template #editRocketBlock>
+    <input
+      #rocket
+      (keyup.enter)="updateRocket(rocket.value)"
+      value="{{ rocketName }}"
+    />
+  </ng-template>
 </h3>
